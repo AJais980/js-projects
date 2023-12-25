@@ -4,11 +4,13 @@ document.addEventListener("DOMContentLoaded",
         input.value = '0';
         let buttons = document.querySelectorAll('.button');
         let expression = "";
+        let openBracketCount = 0;
+        let lastChar;
+        let isNumber;
+
         buttons.forEach(button => {
             button.addEventListener('click', (e) => {
                 const buttonText = e.target.innerText;
-
-
 
                 switch (buttonText) {
                     case '=':
@@ -21,6 +23,23 @@ document.addEventListener("DOMContentLoaded",
                         }
                         break;
 
+                    case '()':
+
+                        lastChar = expression.slice(-1);
+                        isNumber = /^[0-9]+$/.test(lastChar);
+
+                        if((openBracketCount % 2 == 0) && (!isNumber) && (lastChar != ')')){
+                            expression += '('
+                            input.value = expression;
+                            openBracketCount++;
+                        } else if(openBracketCount % 2 == 1 && isNumber){
+                            expression += ')'
+                            input.value = expression;
+                            openBracketCount++;
+                        }
+                    break;
+
+
                     case 'Del':
                         expression = expression.slice(0, -1);
                         input.value = expression;
@@ -28,15 +47,14 @@ document.addEventListener("DOMContentLoaded",
 
                     case 'AC':
                         expression = '';
-                        input.value = '';
+                        input.value = '0';
+                        openBracketCount = 0;
                         break;
 
                     default:
-                        const lastChar = expression.slice(-1);//*
-
+                        lastChar = expression.slice(-1);
                         const isOperator = ['+', '-', '*', '/'].includes(lastChar);
-
-                        const isNumber = /^[0-9]+$/.test(buttonText);
+                        isNumber = /^[0-9]+$/.test(buttonText);
 
                         if ((!isNumber && !isOperator) || isNumber) {
                             expression += buttonText;
