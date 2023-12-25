@@ -6,48 +6,48 @@
     <title>Calculator</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body style="background: url(/dist/bg.png);  background-repeat: no-repeat; background-size: cover;" class="grid mt-[200px] text-slate-300">
+<body style="background: url(/dist/bg.png);  background-repeat: no-repeat; background-size: cover;" class="grid mt-[200px] text-slate-500">
 
-    <div class="grid bg-[#f8f9fa] place-self-center border-4 border-sky-400 rounded-md backdrop-blur-lg">
+    <div class="grid bg-[#f8f9fa] drop-shadow-[0_4px_10px_rgba(255,102,178,0.6)] place-self-center rounded-md backdrop-blur-lg">
 
-        <div class="mt-5 mx-5 p-1 border-4 border-pink-500 rounded ">
-            <input style="border: none; outline: none; text-align: right; background: none;" type="text" name="" id="expression-field">
+        <div class="mt-5 mx-5 relative">
+            <input class="h-[100px] rounded-md p-2 text-white bg-[#BBD0FF] text-right bottom-0" style="border: none; outline: none;" type="text" name="" id="expression-field">
         </div>
 
         <div class="grid grid-rows-4 gap-4 m-5">
             <div class="grid grid-cols-4 gap-4">
-                <button class="button">AC</button>
-                <button class="button">Del</button>
-                <button class="button">()</button>
-                <button class="button">/</button>
+                <button class="button bg-[#E7C6FF] h-11 w-11 rounded-md ">AC</button>
+                <button class="button bg-[#E7C6FF] h-11 w-11 rounded-md">Del</button>
+                <button class="button bg-[#E7C6FF] h-11 w-11 rounded-md">()</button>
+                <button class="button bg-[#E7C6FF] h-11 w-11 rounded-md">/</button>
             </div>
 
             <div class="grid grid-cols-4 gap-4">
-                <button class="button">7</button>
-                <button class="button">8</button>
-                <button class="button">9</button>
-                <button class="button"> * </button>
+                <button class="button bg-[#FFD6FF] h-11 w-11 rounded-md">7</button>
+                <button class="button bg-[#FFD6FF] h-11 w-11 rounded-md">8</button>
+                <button class="button bg-[#FFD6FF] h-11 w-11 rounded-md">9</button>
+                <button class="button bg-[#E7C6FF] h-11 w-11 rounded-md"> * </button>
             </div>
             
             <div class="grid grid-cols-4 gap-4">
-                <button class="button">4</button>
-                <button class="button">5</button>
-                <button class="button">6</button>
-                <button class="button">-</button>
+                <button class="button bg-[#FFD6FF] h-11 w-11 rounded-md">4</button>
+                <button class="button bg-[#FFD6FF] h-11 w-11 rounded-md">5</button>
+                <button class="button bg-[#FFD6FF] h-11 w-11 rounded-md">6</button>
+                <button class="button bg-[#E7C6FF] h-11 w-11 rounded-md">-</button>
             </div class="grid grid-cols-4 gap-4">
 
             <div class="grid grid-cols-4 gap-4">
-                <button class="button" >1</button>
-                <button class="button" >2</button>
-                <button class="button" >3</button>
-                <button class="button" >+</button>
+                <button class="button bg-[#FFD6FF] h-11 w-11 rounded-md" >1</button>
+                <button class="button bg-[#FFD6FF] h-11 w-11 rounded-md" >2</button>
+                <button class="button bg-[#FFD6FF] h-11 w-11 rounded-md" >3</button>
+                <button class="button bg-[#E7C6FF] h-11 w-11 rounded-md" >+</button>
             </div>
             
             <div class="grid grid-cols-4 gap-4">
-                <button class="button" >0</button>
-                <button class="button" >%</button>
-                <button class="button" >.</button>
-                <button class="button" >=</button>
+                <button class="button bg-[#FFD6FF] h-11 w-11 rounded-md" >0</button>
+                <button class="button bg-[#FFD6FF] h-11 w-11 rounded-md" >%</button>
+                <button class="button bg-[#FFD6FF] h-11 w-11 rounded-md" >.</button>
+                <button class="button bg-[#E7C6FF] h-11 w-11 rounded-md" >=</button>
             </div>
         </div>
 

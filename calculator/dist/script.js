@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded" ,
 function(){
     let input = document.getElementById('expression-field');
-    input.value = '';
+    input.value = '0';
     let buttons = document.querySelectorAll('.button');
     let expression = "";
     buttons.forEach(button => {
