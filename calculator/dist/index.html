@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body style="background: url(/dist/bg.png);  background-repeat: no-repeat; background-size: cover;" class="grid mt-[200px] text-slate-500">
 
-    <div class="grid bg-[#f8f9fa] drop-shadow-[0_4px_10px_rgba(255,102,178,0.6)] place-self-center rounded-md backdrop-blur-lg">
+<body style="background: url(/dist/bg.png);  background-repeat: no-repeat; background-size: cover;"
+    class="grid mt-[200px] text-slate-500">
+
+    <div
+        class="grid bg-[#f8f9fa] drop-shadow-[0_4px_10px_rgba(255,102,178,0.6)] place-self-center rounded-md backdrop-blur-lg max-w-[250px]">
 
         <div class="mt-5 mx-5 relative">
-            <input class="h-[100px] rounded-md p-2 text-white bg-[#BBD0FF] text-right bottom-0" style="border: none; outline: none;" type="text" name="" id="expression-field">
+            <input class="h-[100px] w-full rounded-md p-2 text-white bg-[#BBD0FF] text-right bottom-0 max-w-full"
+                style="border: none; outline: none;" type="text" name="" id="expression-field">
         </div>
 
         <div class="grid grid-rows-4 gap-4 m-5">
@@ -28,7 +33,7 @@
                 <button class="button bg-[#FFD6FF] h-11 w-11 rounded-md">9</button>
                 <button class="button bg-[#E7C6FF] h-11 w-11 rounded-md"> * </button>
             </div>
-            
+
             <div class="grid grid-cols-4 gap-4">
                 <button class="button bg-[#FFD6FF] h-11 w-11 rounded-md">4</button>
                 <button class="button bg-[#FFD6FF] h-11 w-11 rounded-md">5</button>
@@ -37,17 +42,17 @@
             </div class="grid grid-cols-4 gap-4">
 
             <div class="grid grid-cols-4 gap-4">
-                <button class="button bg-[#FFD6FF] h-11 w-11 rounded-md" >1</button>
-                <button class="button bg-[#FFD6FF] h-11 w-11 rounded-md" >2</button>
-                <button class="button bg-[#FFD6FF] h-11 w-11 rounded-md" >3</button>
-                <button class="button bg-[#E7C6FF] h-11 w-11 rounded-md" >+</button>
+                <button class="button bg-[#FFD6FF] h-11 w-11 rounded-md">1</button>
+                <button class="button bg-[#FFD6FF] h-11 w-11 rounded-md">2</button>
+                <button class="button bg-[#FFD6FF] h-11 w-11 rounded-md">3</button>
+                <button class="button bg-[#E7C6FF] h-11 w-11 rounded-md">+</button>
             </div>
-            
+
             <div class="grid grid-cols-4 gap-4">
-                <button class="button bg-[#FFD6FF] h-11 w-11 rounded-md" >0</button>
-                <button class="button bg-[#FFD6FF] h-11 w-11 rounded-md" >%</button>
-                <button class="button bg-[#FFD6FF] h-11 w-11 rounded-md" >.</button>
-                <button class="button bg-[#E7C6FF] h-11 w-11 rounded-md" >=</button>
+                <button class="button bg-[#FFD6FF] h-11 w-11 rounded-md">0</button>
+                <button class="button bg-[#FFD6FF] h-11 w-11 rounded-md">%</button>
+                <button class="button bg-[#FFD6FF] h-11 w-11 rounded-md">.</button>
+                <button class="button bg-[#E7C6FF] h-11 w-11 rounded-md">=</button>
             </div>
         </div>
 
@@ -57,6 +62,5 @@
     <script src="script.js"></script>
 
 </body>
+
 </html>
-
-
